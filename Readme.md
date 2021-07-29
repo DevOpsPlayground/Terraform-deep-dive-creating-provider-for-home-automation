@@ -8,13 +8,13 @@ anywhere you see `<NAME>` change to your panda name (no spaces)
 
 On the playground day go to `https://lab.devopsplayground.org/`
 
-open
+Open
 
 
 - Terminal
 
 `<url>/wetty` 
- run `cd ~/workdir/homeauto`
+ run `cd ~/workdir/Terraform-deep-dive-creating-provider-for-home-automation`
 
 
 - IDE if dont want to use vim to edit files
@@ -24,8 +24,11 @@ open
 
 ## 1. Set up the home-assistant instance
 
+If using the Playgrounds infrastruture skip to point 3.
+
 1. Open Terminal
 2. `docker-compose up --detach` (--detach means we can still use the same terminal)
+
 3. Go to `URL:8123`
 4. Make account - not https so don't use an important password
    (location and name doesn't matter)
