@@ -2,7 +2,7 @@
 
 anywhere you see `<URL>` change to your instance url (or localhost if not remote)
 
-anywhere you see `<NAME>` change to a username (no spaces)
+anywhere you see `<NAME>` change to your panda name (no spaces)
 
 ## 0. Setup Info
 
@@ -23,8 +23,6 @@ open
 `<url>:8000`
 
 ## 1. Set up the home-assistant instance
-
-If using the Playgrounds infrastruture skip to step 3.
 
 1. Open Terminal
 2. `docker-compose up --detach` (--detach means we can still use the same terminal)
@@ -220,7 +218,7 @@ func resourceLightRead(ctx context.Context, d *schema.ResourceData, m interface{
 
 ```
 
-- Have a look in to the `terraform.tfstate` that was made when we did the `terraform apply` in the last step, the `status = tanted` meaning terraform doesn't trust the state
+- Have a look in to the `terraform.tfstate` that was made when we did the `terraform apply` in the last step, the `status = tainted` meaning terraform doesn't trust the state
 - Delete the `terraform.tfstate` and `terraform.tfstate.backup` files if they exsist
 - run `sh build.sh <NAME> 0.0.1` remember to change `<NAME>` to your panda name
     -and look at the `terraform.tfstate` file again, you will see the status value isnt there this time because the state can be tracked now
